@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(159, 236, 152);
+    font-family: 'Nunito Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 100px;
+}
+a{ text-decoration: none;}
+
+li{list-style: none;}
+    
+

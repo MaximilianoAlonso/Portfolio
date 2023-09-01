@@ -1,0 +1,104 @@
+/* FIRST MOBILE */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.menu {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: -100vw;
+  background-color:  rgba(17, 145, 38, 0.541);
+  transition: all 1000ms;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 0 10px rgba(17, 145, 38, 0.267);
+  z-index: 2;
+}
+
+/* Toggle class Menu*/
+.verMenu {
+  left: 0;
+
+  transition: all 1000ms;
+}
+.one,
+.two,
+.three,
+.four {
+  font-size: 35px;
+  font-weight: 800;
+  display: block;
+  position: relative;
+  left: -100vw;
+  transition: all 10s;
+  margin: 20px 0;
+  letter-spacing: 2px;
+  color: #ffffff;
+  transition: all 1000ms;
+}
+/* Toggle class items transition*/
+.verItemsOne {
+  left: 25px;
+  transition: all 1300ms;
+}
+.verItemsTwo {
+  left: 25px;
+  transition: all 1500ms;
+}
+.verItemsThree {
+  left: 25px;
+  transition: all 1700ms;
+}
+.verItemsFour {
+  left: 25px;
+  transition: all 1900ms;
+}
+
+/* Toggle class item view transition*/
+.itemClick {
+  letter-spacing: 4px;
+  border-left: 2px white solid;
+  color: #ffffff;
+  transition: all 5s;
+}
+
+header .menu .closeIcon {
+  width: 100%;
+  text-align: right;
+  padding: 20px;
+  font-size: 35px;
+}
+
+header .networks {
+  display: flex;
+  justify-content: space-between;
+ 
+  width: 100vw;
+  color: aliceblue;
+  padding: 18px;
+  font-size: 25px;
+  line-height: 30px;
+  background-color: rgba(2, 175, 74, 0.877);
+  z-index: 1;
+}
+header .networks a{
+
+  color: aliceblue;
+
+}
+
+
+/* TABLET */
+@media (min-width: 768px) {
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+}
