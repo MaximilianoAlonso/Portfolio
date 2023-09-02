@@ -1,0 +1,22 @@
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+input{
+    margin: 15px 0;
+    padding: 5px;
+}
+textarea{
+    resize: none;
+}
+button{
+    margin: 15px 0;
+    background-color: rgb(70, 161, 8);
+    border: none;
+    
+    color: aliceblue;
+    text-transform: uppercase;
+    padding: 15px;
+}
