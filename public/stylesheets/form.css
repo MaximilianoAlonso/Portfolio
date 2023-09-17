@@ -6,16 +6,19 @@ form{
 }
 input{
     margin: 15px 0;
-    padding: 5px;
+    padding: 8px;
+    border-radius: 7px
 }
 textarea{
     resize: none;
+    padding: 8px;
+    border-radius: 7px
 }
 button{
     margin: 15px 0;
     background-color: rgb(70, 161, 8);
     border: none;
-    
+    border-radius: 7px;
     color: aliceblue;
     text-transform: uppercase;
     padding: 15px;

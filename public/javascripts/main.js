@@ -52,3 +52,15 @@ preventLink(".one", 800)
 preventLink(".two", 800)
 preventLink(".three", 800)
 preventLink(".four", 800)
+
+
+/* Sweet Alert */
+$("#buttonForm").addEventListener('click', function(event) {
+Swal.fire({
+  position: 'center',
+  icon: 'success',
+  title: 'Estaremos en contacto!!',
+  showConfirmButton: false,
+  timer: 1500
+})
+})

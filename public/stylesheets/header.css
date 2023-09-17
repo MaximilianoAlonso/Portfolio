@@ -93,7 +93,15 @@ header .networks a{
   color: aliceblue;
 
 }
-
+.cv{
+  display: block;
+height: 30px;
+width: 30px;
+text-align: center;
+  border: 2px white solid;
+  border-radius: 50%;
+  font-size: 13px;
+}
 
 /* TABLET */
 @media (min-width: 768px) {
