@@ -1,36 +1,39 @@
 <main>
-  <section class="presentation">
-    <h1 class="iam">Maximiliano Alonso</h1>
-  <h2>FullStack Develop</h2>
-    <img src="/images/foto.png" alt="" />
-  </section>
- <section class="icons">
-  <h2 class="tecnologias aboutTitle">Tecnologías</h2>
-      <img src="/images/icons/node.png" alt="">
-  <img src="/images/icons/js.png" alt="">
-     
-     <img src="/images/icons/nestjs.png" alt="">
-     <img src="/images/icons/react.png" alt="">
-      <img src="/images/icons/Sequelize.png" alt="">
-      <img src="/images/icons/git.png" alt="">
-
-      <img src="/images/icons/sql.png" alt="">
-
-       <img src="/images/icons/css.png" alt="">
-
-      <img src="/images/icons/html.png" alt="">
-
+  <section class="presentation" >
  
+    <h1 class="iam">Maximiliano Alonso</h1>
+    <h2>Programador Full Stack</h2>
+    <img src="/images/foto.png" alt="" />
+    <h3 class="about" id="top">Sobre Mí</h3>
+    <p>Soy originario de Buenos Aires, Monte Grande, y me he dedicado de manera integral a la programación durante los últimos 2 años y medio. Mi enfoque principal reside en el continuo desarrollo de mis habilidades y conocimientos en este campo. Constantemente me enfoco en el estudio de nuevas tecnologías y en la creación de proyectos donde puedo aplicar las destrezas adquiridas.</p>
 
-      <img src="/images/icons/bootstrap.png" alt="">
+  </section>
+  <section class="icons tecnologias aboutTitle" id="about">
+    <h2 class="tecnologias" id="aboutTitle">Tecnologías</h2>
+    <img src="/images/icons/node.png" alt="TechIcon" />
+    <img src="/images/icons/js.png" alt="TechIcon" />
 
+    <img src="/images/icons/nestjs.png" alt="TechIcon" />
+    <img src="/images/icons/react.png" alt="TechIcon" />
+    <img src="/images/icons/Sequelize.png" alt="TechIcon" />
+    <img src="/images/icons/git.png" alt="TechIcon" />
 
- </section>
+    <img src="/images/icons/sql.png" alt="TechIcon" />
+
+    <img src="/images/icons/css.png" alt="TechIcon" />
+
+    <img src="/images/icons/html.png" alt="TechIcon" />
+    <img src="/images/icons/mongodb.png" alt="TechIcon" />
+
+    <img src="/images/icons/bootstrap.png" alt="TechIcon" />
+    <img src="/images/icons/scrum.png" alt="TechIcon" />
+  </section>
 
   <section id="skills">
     <h3 class="skillsTitle">Habilidades</h3>
-   
-    <p><i class="fa-solid fa-circle"></i>
+
+    <p>
+      <i class="fa-solid fa-circle"></i>
       Tengo un sólido conocimiento en el mundo del desarrollo web y las
       tecnologías relacionadas. Mi experiencia abarca desde la creación de
       aplicaciones web hasta la gestión de bases de datos. En el lado del
@@ -38,27 +41,87 @@
       experiencia en el uso de Bootstrap para crear interfaces atractivas y
       responsivas.
     </p>
-    <p><i class="fa-solid fa-circle"></i>
-      En el back-end, he trabajado con Node.js, NestJs y he construido aplicaciones web
-      dinámicas utilizando React.js. También estoy cómodo con la gestión de
-      bases de datos, ya que he utilizado tanto MySQL como MongoDB, y tengo
-      experiencia en el uso de Sequelize para interactuar con bases de datos
-      relacionales.
+    <p>
+      <i class="fa-solid fa-circle"></i>
+      En el back-end, he trabajado con Node.js, NestJs y he construido
+      aplicaciones web dinámicas utilizando React.js. También estoy cómodo con
+      la gestión de bases de datos, ya que he utilizado tanto MySQL como
+      MongoDB, y tengo experiencia en el uso de Sequelize para interactuar con
+      bases de datos relacionales.
     </p>
   </section>
   <section id="projects">
     <h3 class="projectsTitle">Proyectos</h3>
-    <h5>En construcción!</h5>
-    <a href="https://lacampanaonline.onrender.com">Compra y venta</a> <br>
-    <a href="https://notepad-1pwu.onrender.com">NotePad</a>
+
+    <article class="container_card">
+      <h4 class="card_title">La Campana Online</h4>
+      <div class="card_body">
+          <p>Este sitio cuenta con un CRUD completo, validaciones en el frontend y el backend, utiliza Sequelize para interactuar con la base de datos que desarrollé en MySQL y Bootstrap para los formulario. </p>
+          <img src="/images/proyects/compraVenta/compraVentaMobile.png" alt="Captura de pantalla del proyecto">
+      </div>
+      <div class="card_links">
+        <a href="">Link</a>
+      <a href="">Repositorio</a>
+      </div>
+  </article>
+  
+
+  <article class="container_card">
+    <h4 class="card_title">NotePad</h4>
+    <div class="card_body">
+      <img src="/images/proyects/notepad/Notepad_Mobile.png"  alt="Captura de pantalla del proyecto">
+        <p>El clasico anotador, posee un CRUD completo, validaciones en tiempo real y del lado del servidor, base de datos MySQL, HTML5 y CSS3, JS, creado desde cero sin plantillas </p>
+    </div>
+    <div class="card_links">
+      <a href="">Link</a>
+    <a href="">Repositorio</a>
+    </div>
+</article>
+
+
+<article class="container_card">
+  <h4 class="card_title">DiapaSong </h4>
+  <div class="card_body">
+      <p>E-commerce realizado en equipo de 4 desarrolladores, nos manejamos con SCRUM y KAMBAN para organizarnos, utilizamos HTML5, CSS3, JavaScript, Sequelize, MySQL y React.JS. Consume una ApiRest la cual creamos y este proyecto tubo una duracion de 7 meses</p>
+      <img src="/images/proyects/diapasong/DiapaSong.png"  alt="Captura de pantalla del proyecto">
+  </div>
+  <div class="card_links">
+    <a href="">Link</a>
+  <a href="">Repositorio</a>
+  </div>
+</article>
+
+<article class="container_card">
+  <h4 class="card_title">Herreria H&M</h4>
+  <div class="card_body">
+    <img src="/images/proyects/herreria/herreriaMobile.png"   alt="Captura de pantalla del proyecto">
+      <p>Es un sitio que realize para promocionar mi antiguo emprendimiento, este fue mi primer proyecto, utilize Html, Css y JavaScript </p>
+  </div>
+  <div class="card_links">
+    <a href="">Link</a>
+  <a href="">Repositorio</a>
+  </div>
+</article>
+
+<article class="container_card">
+  <h4 class="card_title">Tic Tac Toe</h4>
+  <div class="card_body">
+      <p>El clasico "Tic Tac Toe" es un mini juego para dos personas cuyo fin es lograr alinear 3 fichas. Lo hice con Javascript Vanilla, HTML y CSS.</p>
+      <img src="/images/proyects/tictactoe/tictactoeMobile.png" alt="Captura de pantalla del proyecto">
+  </div>
+  <div class="card_links">
+    <a href="">Link</a>
+  <a href="">Repositorio</a>
+  </div>
+</article>
   </section>
   <section id="contact">
     <h3 class="contactTitle">Contactos</h3>
     <h4>Puedes dejarme comentarios o sugerencias</h4>
     <form action="" method="post">
-      <input type="text" name="name" placeholder="Nombre"/>
-      <input type="number" name="phone" placeholder="Teléfono"/>
-      <input type="email" name="email" placeholder="Email"/>
+      <input type="text" name="name" placeholder="Nombre" />
+      <input type="number" name="phone" placeholder="Teléfono" />
+      <input type="email" name="email" placeholder="Email" />
       <textarea
         name="comment"
         id="contactForm"

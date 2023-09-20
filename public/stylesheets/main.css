@@ -10,23 +10,26 @@ main .presentation{
 }
 main .presentation h2{
 text-align: center;
+margin: 10px 0;
 letter-spacing: 3px;
 
 }
 main .presentation h1{
     text-align: center;
     font-size: 30px;
+    margin: 10px;
 }
 main section{
-    padding: 65px 10px;
+    padding: 50px 10px 5px;
 }
 main section p{
     line-height: 25px;
     font-size: 20px;
 }
 main section h3{
-    padding: 10px 0;
-    margin-top: 30px;
+    padding: 5px 0;
+    padding-top: 50px;
+    text-align: center;
     font-size: 35px;
     line-height: 30px;
     margin: 10px 0;
@@ -37,8 +40,8 @@ cursor: pointer;
 .presentation img{
     background-color: rgba(0, 0, 0, 0.411);
     border-radius: 10px;
-    width: 50vw;
-    margin: 15px;
+    width: 70vw;
+    margin: 10px;
 }
 main #skills p{
 margin-bottom: 20px;
@@ -71,5 +74,59 @@ main #skills p i{
     color: #ffffff;
     text-align: center;
     padding: 15px;
+    margin: 50px 0;
     text-transform: uppercase;
+}
+.presentation p{
+    text-align: center;
+    font-weight:600;    
+}
+.about{
+    padding-top: 70px;
+}
+
+
+.container_card{
+padding: 10px 5px;
+background-color: rgba(0, 0, 0, 0.521);
+color: #ffffff;
+border-radius: 20px;
+margin: 15px 0;
+}
+
+.card_title{
+    font-size: 22px;
+    margin: 8px;
+    text-align: center;
+    text-decoration: underline;
+
+}
+
+.card_body{
+    display: flex;
+    align-items: center;
+}
+.card_body p{
+   text-align: center;
+}
+.card_body img{
+    width: 40%;
+ 
+}
+.card_links{
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+    text-align: center;
+    margin: 5px;
+
+}
+.card_links a{
+    display: block;
+  background-color: black;
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: bisque;
+  width: 48%;
+
 }

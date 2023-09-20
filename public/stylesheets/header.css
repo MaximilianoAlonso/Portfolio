@@ -28,6 +28,7 @@ header {
 
   transition: all 1000ms;
 }
+.top,
 .one,
 .two,
 .three,
@@ -43,7 +44,12 @@ header {
   color: #ffffff;
   transition: all 1000ms;
 }
+
 /* Toggle class items transition*/
+.verItemsTop {
+  left: 25px;
+  transition: all 1000ms;
+}
 .verItemsOne {
   left: 25px;
   transition: all 1300ms;
@@ -64,9 +70,7 @@ header {
 /* Toggle class item view transition*/
 .itemClick {
   letter-spacing: 4px;
-  border-left: 2px white solid;
-  color: #ffffff;
-  transition: all 5s;
+  transition: all 3s;
 }
 
 header .menu .closeIcon {
@@ -95,12 +99,14 @@ header .networks a{
 }
 .cv{
   display: block;
-height: 30px;
-width: 30px;
+height: 28px;
+width: 28px;
 text-align: center;
+line-height: 25px;
   border: 2px white solid;
   border-radius: 50%;
   font-size: 13px;
+  font-weight: 900;
 }
 
 /* TABLET */
