@@ -1,3 +1,3 @@
 [build]
-  command = "npm run build" # Cambia esto al comando que usas para construir tu proyecto
-  publish = "dist" # Cambia esto al directorio que contiene tu aplicación construida
+  command = "npm install" # Cambia esto al comando que usas para construir tu proyecto
+  publish = "/" # Cambia esto al directorio que contiene tu aplicación construida
