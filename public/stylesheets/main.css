@@ -98,7 +98,7 @@ margin: 15px 0;
     font-size: 22px;
     margin: 8px;
     text-align: center;
-    text-decoration: underline;
+ 
 
 }
 
@@ -129,4 +129,73 @@ margin: 15px 0;
   color: bisque;
   width: 48%;
 
+}
+
+
+/* TABLET */
+@media (min-width: 768px) {
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+    .presentation img{
+        background-color: rgba(0, 0, 0, 0.411);
+        border-radius: 10px;
+        width: 30vw;
+        margin: 10px;
+    }
+    .icons img{
+        width: 15%;
+        align-self: center;
+        padding: 5px;
+        margin: 0 auto
+        ;
+        
+    }
+    main section p{
+        line-height: 35px;
+        font-size: 28px;
+        text-align: center;
+        padding: 20px 150px;
+    }
+    .container_card{
+     width: 70%;
+     padding: 35px;
+        
+        }
+
+        main #skills p{
+            margin-bottom: 20px;
+            line-height: 39px;
+
+            }
+            main section h3{
+                font-size: 55px;
+            }
+            .tecnologias{
+             font-size: 55px;
+            }
+
+            .container_card
+            {
+                margin: 24px auto;
+                padding: 50px;
+            
+            }
+            .card_links a{
+             margin: 50px 0;
+              padding: 15px 10px;
+         
+            }
+            .card_title{ 
+                font-size: 45px;
+            }
+            .card_body{
+                 padding: 0 90px;
+            }
+            .card_body p{
+                font-size: 35px;
+                line-height: 40px;
+                
+                     }
 }

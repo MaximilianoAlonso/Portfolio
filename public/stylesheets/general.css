@@ -19,3 +19,10 @@ a{ text-decoration: none;}
 li{list-style: none;}
     
 
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+body{
+    padding: 0 150px;
+}
+}
