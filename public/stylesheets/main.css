@@ -130,6 +130,9 @@ margin: 15px 0;
   width: 48%;
 
 }
+.certificados{
+text-align: center;
+}
 
 
 /* TABLET */
@@ -154,15 +157,10 @@ margin: 15px 0;
     }
     main section p{
         line-height: 35px;
-        font-size: 28px;
+        font-size: 22px;
         text-align: center;
         padding: 20px 150px;
     }
-    .container_card{
-     width: 70%;
-     padding: 35px;
-        
-        }
 
         main #skills p{
             margin-bottom: 20px;
@@ -170,32 +168,67 @@ margin: 15px 0;
 
             }
             main section h3{
-                font-size: 55px;
+                font-size: 45px;
             }
+            .tecnologias h2 {
+                font-size: 55px;
+                font-weight: bold;
+                animation: animacion-letter-spacing 2s infinite alternate;
+            }
+            
+            @keyframes animacion-letter-spacing {
+                0% {
+                    letter-spacing: 2px;
+                }
+                100% {
+                    letter-spacing: 8px;
+                }}
             .tecnologias{
-             font-size: 55px;
+            
+             border-radius: 10px;
             }
 
             .container_card
             {
+                width: 100%;
                 margin: 24px auto;
-                padding: 50px;
+                padding: 5px;
+                box-shadow: 2px 2px 10px white;
             
             }
             .card_links a{
              margin: 50px 0;
-              padding: 15px 10px;
-         
+              padding: 5px 2px;
+         width: 400px;
             }
             .card_title{ 
-                font-size: 45px;
+                font-size: 35px;
+                width: 90%;
+                margin: 10px auto;
+                letter-spacing: 3px;
+                width: 50%;
+                border-bottom: 2px solid white;
+             
             }
             .card_body{
+                width: 80%;
+                margin: 0 auto;
                  padding: 0 90px;
             }
             .card_body p{
-                font-size: 35px;
+                padding: 10px;
+                margin: 0;
+                font-size: 22px;
                 line-height: 40px;
                 
                      }
+                     .card_body img{
+                        width: 25%;
+                     
+                    }
+                    .certificados h4{
+                        font-size: 25px;
+                        margin-top: 15px;
+                        
+                    }
 }
