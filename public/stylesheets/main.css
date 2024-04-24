@@ -37,11 +37,12 @@ main section h3{
 .menuBars{
 cursor: pointer;
 }
+
 .presentation img{
     background-color: rgba(0, 0, 0, 0.411);
-    border-radius: 10px;
     width: 70vw;
     margin: 10px;
+    border-radius: 50%;
 }
 main #skills p{
 margin-bottom: 20px;
@@ -82,7 +83,7 @@ main #skills p i{
     font-weight:600;    
 }
 .about{
-    padding-top: 70px;
+    padding-top: 50px;
 }
 
 
@@ -150,7 +151,7 @@ text-align: center;
     .icons img{
         width: 15%;
         align-self: center;
-        padding: 5px;
+        padding: 10px;
         margin: 0 auto
         ;
         
@@ -184,7 +185,6 @@ text-align: center;
                     letter-spacing: 8px;
                 }}
             .tecnologias{
-            
              border-radius: 10px;
             }
 
