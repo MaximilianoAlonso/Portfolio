@@ -6,10 +6,9 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
- 
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
-    "dotenv": "^16.3.1",
+    "dotenv": "^16.4.5",
     "ejs": "~2.6.1",
     "express": "~4.16.1",
     "express-session": "^1.17.3",
@@ -18,10 +17,8 @@
     "lru-cache": "^9.1.1",
     "method-override": "^3.0.0",
     "morgan": "~1.9.1",
-    "sequelize": "^6.37.3",
     "mysql": "^2.18.1",
-    "mysql2": "^3.9.7"
-    
-
+    "mysql2": "^3.9.7",
+    "sequelize": "^6.37.3"
   }
 }

@@ -1,19 +1,22 @@
 // index.js
 
 // Importa los módulos necesarios
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
-var http = require('http');
-  
+require('dotenv').config();
+
+const createError = require('http-errors');
+const express = require('express');
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const logger = require('morgan');
+const http = require('http');
+
+
 // Importa los enrutadores
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+const indexRouter = require('./routes/index');
+const usersRouter = require('./routes/users');
 
 // Crea una instancia de Express
-var app = express();
+const app = express();
 
 // Configura la vista del motor
 app.set('views', path.join(__dirname, 'views'));
@@ -46,12 +49,16 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+
+/* EL SIGUIENTE CODIGO REEMPLAZA AL ARCHIVO BIN/WWW */
+/* SE QUITA AL INA EL MODULE.EXPORT */
+
 // Obtiene el puerto del entorno y lo guarda en Express
-var port = normalizePort(process.env.PORT || '3000');
+const port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
 
 // Crea el servidor HTTP
-var server = http.createServer(app);
+const server = http.createServer(app);
 
 // Escucha en el puerto proporcionado, en todas las interfaces de red
 server.listen(port);
@@ -60,7 +67,7 @@ server.on('listening', onListening);
 
 // Normaliza un puerto en un número, cadena o falso.
 function normalizePort(val) {
-  var port = parseInt(val, 10);
+  const port = parseInt(val, 10);
 
   if (isNaN(port)) {
     // named pipe
@@ -81,7 +88,7 @@ function onError(error) {
     throw error;
   }
 
-  var bind = typeof port === 'string'
+  const bind = typeof port === 'string'
     ? 'Pipe ' + port
     : 'Port ' + port;
 
@@ -102,8 +109,8 @@ function onError(error) {
 
 // Evento oyente para el evento "listening" del servidor HTTP.
 function onListening() {
-  var addr = server.address();
-  var bind = typeof addr === 'string'
+  const addr = server.address();
+  const bind = typeof addr === 'string'
     ? 'pipe ' + addr
     : 'port ' + addr.port;
   console.log('Listening on ' + bind);
