@@ -1,23 +1,42 @@
 const fs = require("fs")
 const path = require("path")
-const commentForn = require("../data/comment.json")
 
-const escribirJSON = (item) => {fs.writeFileSync(path.join(__dirname, "../data/comment.json"),JSON.stringify(item, null, 2),"utf-8")};
+const db = require("../database/models")
+
+
 module.exports = {
     index: (req,res) => {
         res.render("index")
     },
-    saveFormContact: (req,res) => {
-   
-        const {name, comment, phone , email} = req.body;
-     const newComment ={
-            name: name,
-            phone:phone,
+    saveComments: async (req,res) => {
+        try {
+        const {name,phone,email,comment} =  req.body;
+        await db.Comments.create({
+            name:name,
+            phone: phone,
             email:email,
-            comment: comment
-        }
-        commentForn.push(newComment)
-        escribirJSON(commentForn)
+            comment:comment
+        })
+
         res.redirect("/")
+
+        } catch (error) {
+            console.log(error)
+        }        
+    },
+    viewComment: async (req,res) =>{
+
+        try {
+            const allComments = await db.Comments.findAll()
+
+            res.render("comments", {
+                comments: allComments
+            })
+            
+
+
+         } catch (error) {
+            console.log(error);
+        }
     }
 }

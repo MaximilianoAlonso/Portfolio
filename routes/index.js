@@ -1,10 +1,11 @@
 const express = require('express');
 const router = express.Router();
-const {index, saveFormContact} = require("../controllers/indexController")
+const {index,saveComments,viewComment} = require("../controllers/indexController")
 
 /* GET home page. */
 router.get('/', index)
-      .post("/", saveFormContact)
+        .post('/', saveComments)
+        .get("/comments", viewComment)
 
 
 module.exports = router;
