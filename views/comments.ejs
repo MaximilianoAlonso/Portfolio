@@ -6,18 +6,22 @@
   <%- include("partials/header") %>
 
     <main>
-        <h1 style="margin-top: 70px;">
+        <h1 style="margin: 70px 0 20px;text-align: center; ">
             Comentarios
         </h1>
 
-        <ul>
-            <% comments.forEach(({name,phone,email,comment}) => { %>
-              <li>Nombre: <%= name %> </li>
-            <li>Telefono: <%= phone %> </li>
-            <li>Email: <%= email %> </li>
-            <li>Comentario: <%= comment %> </li>
-            <br>
-            <br>
+        <ul class="commentContainer">
+            <% comments.forEach(({id,name,phone,email,comment}) => { %>
+                <div class="commentsCard">
+                    <li><b>Nombre:</b>  <%= name %> </li>
+            <li><b>Telefono:</b>   <%= phone %> </li>
+            <li><b>Email:</b>  <%= email %> </li>
+            <li><b>Comentario:</b>  <%= comment %> </li>
+            <form action="/deleteComment/<%= id %>" method="POST">
+              <button type="submit">Borrar</button>
+          </form> 
+                </div>
+           
             <% }) %>
            
         </ul>

@@ -34,5 +34,20 @@ module.exports = {
             console.error("Error al ver comentarios:", error);
             res.status(500).send("Error interno del servidor");
         }
-    }
+    },
+    deleteComment: async (req, res) => {
+        try {
+            const commentId = req.params.id;
+            
+            await db.Comments.destroy({
+                where: {
+                    id: commentId
+                }
+            });
+            res.redirect("comments");
+        } catch (error) {
+            console.error("Error al borrar el comentario:", error);
+            res.status(500).send("Error interno del servidor");
+        }    }
+
 };

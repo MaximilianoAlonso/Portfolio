@@ -8,6 +8,7 @@ input{
     margin: 15px 0;
     padding: 8px;
     border-radius: 7px
+    ;border:none
 }
 textarea{
     resize: none;

@@ -25,4 +25,27 @@ li{list-style: none;}
 body{
     padding: 0 150px;
 }
+.commentContainer{
+
+    display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+
+
+}
+.commentsCard{
+    position: relative;
+background-color: rgba(255, 255, 255, 0.377);
+width: 43%;
+border-radius: 10px;
+min-height: 300px;
+height: auto;
+padding: 30px;
+margin: 10px;
+}
+.commentContainer form{
+ position: absolute;
+ bottom:0;
+ right: 10px;
+}
 }

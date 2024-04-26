@@ -84,6 +84,7 @@ main #skills p i{
 }
 .about{
     padding-top: 70px;
+    margin-top: 50px;
 }
 
 
@@ -174,7 +175,7 @@ text-align: center;
             .tecnologias h2 {
                 font-size: 55px;
                 font-weight: bold;
-                animation: animacion-letter-spacing 2s infinite alternate;
+              
             }
             
             @keyframes animacion-letter-spacing {
